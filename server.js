@@ -140,7 +140,7 @@ app.post("/checkImgixCloseSession", async (req, res) => {
   return res.status(200).send(final);
 });
 
-const PORT = 5001;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log("Server has started on port " + PORT);
 });

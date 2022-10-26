@@ -19,7 +19,7 @@ function App() {
     formData.append("pic", pic);
 
     const test = await axios
-      .post("http://localhost:5001/startImgixSession", formData)
+      .post("http://localhost:5000/startImgixSession", formData)
       .then(console.log("starting imgix session"))
       .catch((error) => console.log(error.message));
 
@@ -41,7 +41,7 @@ function App() {
 
     //Starting session
     const test = await axios
-      .post("http://localhost:5001/postSession", formDataPostRequest)
+      .post("http://localhost:5000/postSession", formDataPostRequest)
       .then(console.log(""))
       .catch((error) => console.log(error.message));
   };
@@ -53,7 +53,7 @@ function App() {
 
     //check session
     const sessionStatusForAxios = await axios
-      .post("http://localhost:5001/checkImgixSessionStatus", value)
+      .post("http://localhost:5000/checkImgixSessionStatus", value)
       .then(console.log("Check imgix session"))
       .catch((error) => console.log(error.message));
 
@@ -69,7 +69,7 @@ function App() {
 
     //close session
     const sessionStatusForAxios = await axios
-      .post("http://localhost:5001/checkImgixCloseSession", valueData)
+      .post("http://localhost:5000/checkImgixCloseSession", valueData)
       .then(console.log("Client - CLOSE imgix session"))
       .catch((error) => console.log(error.message));
 
