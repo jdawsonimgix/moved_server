@@ -11,7 +11,7 @@ function App() {
     useState("No session URL"); //Long amazon url
   const [heldFormData, setHeldFormData] = useState("");
   useEffect(() => {}, [sessionData, heldFormData]);
-
+  //test
   //IMGIX EXAMPLES: STARTING SESSION
   const imgixHandleSubmitForSessionStarting = async (e) => {
     e.preventDefault();
