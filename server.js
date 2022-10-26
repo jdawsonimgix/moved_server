@@ -140,7 +140,13 @@ app.post("/checkImgixCloseSession", async (req, res) => {
   return res.status(200).send(final);
 });
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log("Server has started on port " + PORT);
 });
+
+module.exports = app;
